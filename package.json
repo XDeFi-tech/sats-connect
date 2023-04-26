@@ -1,6 +1,13 @@
 {
-  "name": "sats-connect",
-  "version": "0.1.11",
+  "name": "@xdefi-tech/btc-connect",
+  "description": "XDEFI UI",
+  "author": "@xdefi-tech",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XDeFi-tech/sats-connect.git"
+  },
+  "version": "0.1.0",
   "main": "dist/index.js",
   "files": ["dist"],
   "scripts": {
@@ -28,14 +35,8 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/secretkeylabs/sats-connect.git"
-  },
-  "author": "Secret Key Labs",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/secretkeylabs/sats-connect/issues"
+    "url": "https://github.com/XDeFi-tech/sats-connect/issues"
   },
-  "homepage": "https://github.com/secretkeylabs/sats-connect#readme"
+  "homepage": "https://github.com/XDeFi-tech/sats-connect"
 }

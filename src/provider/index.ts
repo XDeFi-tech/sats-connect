@@ -14,6 +14,8 @@ export interface BitcoinProvider {
 
 declare global {
   interface Window {
-    BitcoinProvider?: BitcoinProvider;
+    xfi: {
+      bitcoin: BitcoinProvider,
+    }
   }
 }

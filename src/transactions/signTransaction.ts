@@ -1,5 +1,6 @@
 import { createUnsecuredToken, Json } from 'jsontokens';
 import { BitcoinNetwork } from '../provider';
+import { provider } from '../config';
 
 
 export interface InputToSign {
@@ -31,7 +32,6 @@ export interface SignTransactionResponse {
 
 export const signTransaction = async (options: SignTransactionOptions) => {
   const { psbtBase64, inputsToSign } = options.payload;
-  const provider = window.BitcoinProvider;
   if (!provider) {
     throw new Error('No Bitcoin Wallet installed');
   }
