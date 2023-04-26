@@ -1,9 +1,9 @@
 import { createUnsecuredToken, Json } from 'jsontokens';
 import { GetAddressOptions } from './types';
+import { provider } from '../config';
 
 export const getAddress = async (options: GetAddressOptions) => {
   const { message, network, purposes } = options.payload;
-  const provider = window.BitcoinProvider;
   if (!provider) {
     throw new Error('No Bitcoin Wallet installed');
   }

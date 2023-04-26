@@ -1,5 +1,6 @@
 import { createUnsecuredToken, Json } from 'jsontokens';
 import { BitcoinNetwork } from '../provider';
+import { provider } from '../config';
 
 export interface CallWalletPayload {
   method: string;
@@ -19,7 +20,6 @@ export enum CallMethod {
 }
 
 export const callWalletPopup = async (options: CallWalletOptions) => {
-  const provider = window.BitcoinProvider;
   const { method } = options.payload;
   if (!provider) {
     throw new Error('No Bitcoin Wallet installed');
